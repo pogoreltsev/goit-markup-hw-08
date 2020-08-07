@@ -74,60 +74,53 @@
             для вашего бизнеса
           </h1>
           <button data-modal-open type="button" class="button" >Заказать услугу</button>
+
           <!--Модалка-->
-          <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop  is-hidden "  data-modal>
             <div class="modal">
-              <b class="modal_invite">Оставьте свои данные, мы вам перезвоним</b>
+              <b class="modal_invite"
+                >Оставьте свои данные, мы вам перезвоним</b>
               <form class="connection" action="">
                 <label class="connection_field">
-                  <input class="connection_input" type="text" name="name" required placeholder="">
+                  <input class="connection_input" type="text" name="name" required placeholder=" "/>
                   <span class="connection_label">Имя</span>
-                  <span>
-                    <svg class="connection_icon">
-                      <use href="./icons/sprite.svg#icon-person-modal"></use>
-                    </svg>
-                  </span>
-                </label>
-                <label class="connection__field">
-                  <input class="connection_input" type="tel" name="telephone" placeholder="">
-                  <span class="connection_label">Телефон</span>
-                  <span>
-                    <svg class="connection_icon">
-                      <use href="./icons/sprite.svg#icon-tel-modal"></use>
-                    </svg>
-                  </span>
+                  <span ><svg class="connection_icon" >
+                  <use href="./icons/sprite.svg#icon-person-modal"></use></span>
                 </label>
                 <label class="connection_field">
-                  <input class="connection_input" type="email" name="email" autocomplete="email" placeholder="" required>
-                  <span>
-                    <svg class="connection_icon">
-                      <use href="./icons/sprite.svg#icon-mail-modal"></use>
-                    </svg>
-                  </span>
+                  <input class="connection_input" type="tel" name="telephone" placeholder=" "/>
+                  <span class="connection_label">Телефон</span>
+                  <span ><svg class="connection_icon" >
+                  <use href="./icons/sprite.svg#icon-tel-modal"></use></span>
                 </label>
-                <label>
-                <textarea class="connection_textarea" name="comment" id rows="10" placeholder="Комментарий"></textarea>
+                <label class="connection_field">
+                  <input class="connection_input" type="email" name="email" placeholder=" " required/>
+                  <span class="connection_label">Почта</span>
+                 <span ><svg class="connection_icon" >
+                  <use href="./icons/sprite.svg#icon-mail-modal"></use></span>
+                </label>
+                <label class="connection_textarea">
+                  <textarea class="connection_textarea-input" name="comment" id="" rows="10" placeholder=" "></textarea>
+                  <span class="connection_label-textarea">Комментарий</span>
                 </label>
                 <div class="form-field-modal">
-                  <label class="checkbox">
-                    <input class="checkbox_input" type="checkbox" name="checkbox">
-                    <span class="checkbox_custom"></span>Соглашаюсь с рассылкой и принимаю
-                    <a class="connection_link" href="Условия договора"></a>
-                  </label>
+                  <label class="checkbox"> 
+                    <input class="checkbox_input" type="checkbox"name="checkbox"/>
+                    <span class="checkbox_custom"></span> Соглашаюсь с рассылкой и принимаю<a class="connection_link" href="">Условия договора</a>
+                    </label
                 </div>
                 <button class="button" type="submit">Отправить</button>
-                <button class="modal_button-close" data-modal-close>
-                  <svg class="modal_icon" width="18" height="18">
-                    <use href="./icons/sprite.svg#icon-close"></use>
-                  </svg>
-                </button>
               </form>
+              <button class="modal_button-close" data-modal-close>
+                <svg class="modal_icon" width="18" height="18" >
+                  <use href="./icons/sprite.svg#icon-close-modal"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Секция преимуществ -->
+  <!-- Секция преимуществ -->
       <section class="section advantages">
         <div class="container">
           <h2 class="subject">Наши Преимущества</h2>
@@ -517,41 +510,28 @@
           <b class="join_us-title">ПРИСОЕДИНЯЙТЕСЬ</b>
           <ul class="footer-socials list">
             <li class="footer-socials-item">
-              <a
-                class="footer-socials-item-link"
-                href=""
-                aria-label="Иконка инстаграма"
-                ><svg class="icon_footer">
+              <a class="footer-socials-item-link" href="" aria-label="Иконка инстаграма">
+                <svg class="icon_footer">
                   <use href="./icons/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-socials-item">
-              <a
-                class="footer-socials-item-link"
-                href=""
-                aria-label="Иконка твиттера"
-                ><svg class="icon_footer">
+              <a class="footer-socials-item-link" href="" aria-label="Иконка твиттера">
+                <svg class="icon_footer">
                   <use href="./icons/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-socials-item">
-              <a
-                class="footer-socials-item-link"
-                href=""
-                aria-label="Иконка фейсбука"
-                ><svg class="icon_footer">
+              <a class="footer-socials-item-link" href="" aria-label="Иконка фейсбука" ><svg class="icon_footer">
                   <use href="./icons/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-socials-item">
-              <a
-                class="footer-socials-item-link"
-                href=""
-                aria-label="Иконка линкедина"
-                ><svg class="icon_footer">
+              <a class="footer-socials-item-link" href="" aria-label="Иконка линкедина">
+                <svg class="icon_footer">
                   <use href="./icons/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
