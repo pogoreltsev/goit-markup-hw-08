@@ -246,16 +246,31 @@ header .section {
   background-repeat: no-repeat;
   background-position: center;
 
-  text-align: center;
+  /*text-align: center; */
 }
 
 .hero .button {
-  padding: 10px 32px;
+  display: block;
+  padding: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 10px;
   border-radius: 4px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--secondaty-accent-color);
 }
 
 .hero-title {
@@ -272,6 +287,23 @@ header .section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+/* Модалка */
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.connection_icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-Vector-3 {
+  width: 1.3330078125em;
 }
 /* Секция преимуществ */
 
