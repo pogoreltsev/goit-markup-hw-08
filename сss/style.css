@@ -242,7 +242,7 @@ header .section {
       var(--hero-gradient-color),
       var(--hero-gradient-color)
     ),
-    url('../img/Header/Hero_opt.jpg');
+    url('../img/Header/Hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

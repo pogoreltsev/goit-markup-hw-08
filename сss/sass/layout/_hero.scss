@@ -9,14 +9,14 @@
     margin-right: auto;
   
     background-image: linear-gradient(
-        to right,
-        $hero-gradient-color,
-        $hero-gradient-color
-      ),
-      url('../img/Header/Hero_opt.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+      to right,
+      var(--hero-gradient-color),
+      var(--hero-gradient-color)
+    ),
+    url('../img/Header/Hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   
     &-title {
       width: 696px;
