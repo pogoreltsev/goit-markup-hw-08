@@ -1,40 +1,43 @@
+/* Оформление основной страницы */
 /* Секция Герой */
 
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  /* outline: 1px solid black; */
+/* Картинка Герой */
 
-  background-image: linear-gradient(
-      to right,
-      var(--hero-gradient-color),
-      var(--hero-gradient-color)
-    ),
-    url('../img/Header/Hero.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
+    margin: 0 auto;
+  
+    background-image: linear-gradient($hero-gradient-color, $hero-gradient-color),
+      url('../img/Header/Hero-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $hero-gradient-color,
+          $hero-gradient-color
+        ),
+        url('../img/Header/Hero-mobile@2x.jpg');
+    }
   
     &-title {
-      width: 696px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       margin-bottom: 30px;
   
       font-weight: 900;
-      font-size: 44px;
-      line-height: 1.4;
+      font-size: 26px;
+      line-height: 1.62;
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #ffffff;
     }
+  }
   
   .hero .button {
     display: block;
@@ -61,5 +64,70 @@
     &:hover,
     &:focus {
       background-color: $secondaty-accent-color;
+    }
+  }
+  
+  // стили для планшета
+  @media screen and (min-width: 768px) {
+    .hero {
+      max-width: 1199px;
+      margin: 0 auto;
+      background-image: linear-gradient(
+          $hero-gradient-color,
+          $hero-gradient-color
+        ),
+        url('../img/Header/Hero-tablet.jpg');
+  
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            $hero-gradient-color,
+            $hero-gradient-color
+          ),
+          url('../img/Header/Hero-tablet@2x.jpg');
+      }
+    }
+  }
+  
+  // cтили для desktop //
+  @media screen and (min-width: 1200px) {
+    .hero {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      max-width: 1600px;
+      margin: 0 auto;
+  
+      background-image: linear-gradient(
+          $hero-gradient-color,
+          $hero-gradient-color
+        ),
+        url('../img/Header/Hero.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            $hero-gradient-color,
+            $hero-gradient-color
+          ),
+          url('../img/Header/Hero@2x.jpg');
+      }
+      &-title {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+  
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
     }
   }

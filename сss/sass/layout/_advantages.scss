@@ -1,27 +1,15 @@
-// секция преимуществ
+// секция преимуществ //
 
-.advantages-list {
+.advantages-util {
     display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
-  
-    .advantages-item {
-      width: 270px;
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
-  }
-  
-  .advantages-util {
-    display: flex;
-    height: 120px;
-    background-color: $secondary-white-color;
-    justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    justify-content: center;
   
+    height: 120px;
     margin-bottom: 30px;
+  
+    background-color: $secondary-white-color;
+    border-radius: 4px;
   }
   
   .icon-advantages {
@@ -43,4 +31,51 @@
     font-size: 14px;
     line-height: 1.7;
     color: $primary-text-color;
+  }
+  
+  // стили для мобилки
+  @media screen and (max-width: 767px) {
+    .advantages-title {
+      text-align: center;
+    }
+  
+    .advantages-item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  // стили для планшета
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .advantages-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .advantages-item {
+      flex-basis: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+  
+      &:nth-child(even) {
+        margin-right: 0px;
+      }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  // cтили для десктопа
+  
+  @media screen and (min-width: 1200px) {
+    .advantages-list {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .advantages-item {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }

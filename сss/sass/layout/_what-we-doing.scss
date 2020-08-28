@@ -1,47 +1,56 @@
-job.section {
+.job.section {
     padding-top: 0px;
-  }
   
-  .job-list {
-    display: flex;
-  }
-  
-  .job-list-item {
-    position: relative;
-  
-    width: 370px;
-  
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (max-width: 1199px) {
+      display: none;
     }
   }
   
-  .job-title {
-    margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    .job.section {
+      padding-top: 0px;
+    }
+    .job-list {
+      display: flex;
+    }
   
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: $primary-title-color;
-  }
+    .job-list-item {
+      position: relative;
   
-  .job-description {
-    position: absolute;
-    bottom: 0;
+      width: 100%;
   
-    width: 100%;
-    height: 70px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    .job-title {
+      margin-bottom: 50px;
   
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
-    color: $primary-white-color;
-    background-color: $text-background-color;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      color: $primary-title-color;
+    }
+  
+    .job-description {
+      position: absolute;
+      bottom: 0;
+  
+      width: 100%;
+      height: 70px;
+  
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+  
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      text-transform: uppercase;
+      color: $primary-white-color;
+      background-color: $text-background-color;
+    }
   }

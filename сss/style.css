@@ -37,6 +37,25 @@ body {
   font-family: var(--main-font);
   letter-spacing: 0.03em;
 }
+  /* обнуление стилей */
+  
+  a:active,
+  a:focus {
+    outline: none;
+  }
+  
+  input,
+  textarea,
+  button {
+    outline: none;
+  }
+  input:active,
+  textarea:active {
+    outline: none;
+  }
+  :focus {
+    outline: none;
+  }
 
 h1,
 h2,
@@ -48,7 +67,6 @@ p {
   padding: 0;
   margin: 0;
 }
-/* обнуление стилей */
 
 img {
   display: block;
@@ -63,6 +81,13 @@ img {
 }
 .link {
   text-decoration: none;
+  display: block;
+}
+textarea {
+  resize: none;
+}
+
+label {
   display: block;
 }
 
@@ -234,7 +259,7 @@ header .section {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+ /* text-align: center; */
   /* outline: 1px solid black; */
 
   background-image: linear-gradient(
@@ -251,10 +276,12 @@ header .section {
 }
 
 .hero .button {
-  /*display: block;*/
+  display: block;
   padding: 10px;
   padding-right: 32px;
   padding-left: 32px;
+  margin-right: auto;
+  margin-left: auto;
   padding-bottom: 10px;
   border-radius: 4px;
   
@@ -302,7 +329,7 @@ header .section {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 9999;
 
   visibility: visible;
   width: 100%;
@@ -402,7 +429,7 @@ header .section {
 .connection_textarea-input {
   width: 448px;
   height: 120px;
-  margin-bottom: 28px;
+
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
@@ -876,6 +903,8 @@ footer div.section {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .footer-socials {
@@ -933,7 +962,6 @@ footer div.section {
 }
 
 .icon-icon_send {
-  display: inline-flex;
   margin-left: 10px;
   width: 20px;
   height: 20px;

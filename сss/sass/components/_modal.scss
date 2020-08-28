@@ -30,11 +30,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  width: calc(100% - 30px);
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  width: 528px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -45,27 +45,22 @@
 .modal_invite {
   margin-bottom: 30px;
 
+  font-size: 20px;
+  line-height: 1.5;
   display: block;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
+
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $primary-title-color;
 }
 
-.connection {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .connection_input {
-  width: 448px;
   height: 40px;
   padding-left: 42px;
-
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -136,10 +131,9 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.connection__textarea-input {
-  width: 448px;
+.connection_textarea-input {
   height: 120px;
-
+  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
@@ -153,9 +147,9 @@
   }
 }
 
-.connection__link {
-  font-size: 14px;
-  line-height: 1.71;
+.connection_link {
+  font-size: 12px;
+  line-height: 1.17;
 
   margin-left: 4px;
 
@@ -166,7 +160,7 @@
 }
 
 /* Чекбокс вижуали хайден */
-.checkbox__input {
+.checkbox_input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -182,11 +176,9 @@
   align-items: center;
 
   margin-bottom: 30px;
-  padding-left: 20px;
-
-  font-size: 14px;
-  line-height: 1.71;
-
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
@@ -238,5 +230,95 @@
   .modal_button-close:hover &,
   .modal_button-close:focus & {
     fill: $accent-color;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    // top: 40%;
+
+    padding-top: 35px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .modal_invite {
+    margin-bottom: 15px;
+
+    font-size: 15px;
+  }
+
+  .checkbox {
+    font-size: 10px;
+    line-height: 1.17;
+  }
+  .connection_link {
+    font-size: 10px;
+    line-height: 1.17;
+  }
+  .connection_field {
+    margin-bottom: 15px;
+  }
+  .connection_textarea {
+    margin-bottom: 15px;
+  }
+
+  .connection_field:focus-within > .connection_label,
+  .connection_input:not(:placeholder-shown) + .connection_label {
+    color: #2196f3;
+    transform: translate(-24px, -34px);
+  }
+
+  .connection_textarea:focus-within > .connection_label-textarea,
+  .connection_textarea-input:not(:placeholder-shown)
+    + .connection_label-textarea {
+    transform: translate(-1px, -26px);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+  .connection_input {
+    width: 370px;
+  }
+  .connection_textarea-input {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal_invite {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .modal {
+    width: 528px;
+  }
+  .connection_input {
+    width: 448px;
+  }
+  .connection_textarea-input {
+    width: 448px;
+  }
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .connection_link {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
