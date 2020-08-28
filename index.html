@@ -63,7 +63,13 @@
             </ul>
           </address>
         </div>
-      </div>
+        <button  class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button >
+          <svg width=40px height=40px  aria-label="Переключатель мобильного меню">
+          <use  class="icon-menu" href="./icons/sprite.svg#icon-menu_mobile"></use>
+          <use  class="icon-cross" href="./icons/sprite.svg#icon-close-black"></use>
+      </svg>
+      </button>
+    </div>
     </header>
     <main>
       <!-- Секция Герой -->
@@ -107,7 +113,7 @@
                   <label class="checkbox"> 
                     <input class="checkbox_input" type="checkbox"name="checkbox"/>
                     <span class="checkbox_custom"></span> Соглашаюсь с рассылкой и принимаю<a class="connection_link" href="">Условия договора</a>
-                    </label
+                  </label>
                 </div>
                 <button class="button" type="submit">Отправить</button>
               </form>
