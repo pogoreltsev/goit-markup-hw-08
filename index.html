@@ -188,48 +188,62 @@
           <h2 class="job-title">Чем мы занимаемся</h2>
           <ul class="job-list list">
             <li class="job-list-item">
-              <img
-                src="./img/computer.jpg"
-                alt="Ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./img/computer.webp 1x, ./img/computer@2x.webp 2x" type="image/webp"  media="(min-width:1200px)">
+               
+                <img  srcset="./img/computer.jpg 1x, ./img/computer@2x.jpg 2x"  src="" alt="Компьютер">
+              </picture>
+ 
               <h3 class="job-description">Десктопные приложения</h3>
             </li>
             <li class="job-list-item">
-              <img
-                src="./img/box.jpg"
-                alt="Телефон"
-                width="370"
-                height="294"
-              />
+            <picture>
+                <source srcset="./img/box.webp 1x, ./img/box@2x.webp 2x" type="image/webp"  media="(min-width:1200px)">
+               
+                <img  srcset="./img/box.jpg 1x, ./img/box@2x.jpg 2x" src="" alt="мобильный">
+              </picture>
               <h3 class="job-description">Мобильные приложения</h3>
             </li>
             <li class="job-list-item">
-              <img
-                src="./img/display.jpg"
-                alt="Монитор"
-                width="370"
-                height="294"
-              />
+               <picture>
+                <source srcset="./img/display.webp 1x, ./img/display@2x.webp 2x" type="image/webp"  media="(min-width:1200px)">
+               
+                <img  srcset="./img/display.jpg 1x, ./img/display@2x.jpg 2x" src="" alt="дизайн">
+              </picture>
               <h3 class="job-description">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
       </section>
       <!-- Секция наша команда -->
+      <!-- Секция наша команда -->
       <section class="team section">
         <div class="container">
           <h2 class="team-main-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                src="./img/team/nikolai.jpg"
-                alt="Фото_дизайнера"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-title">Николай Кучеренко</h3>
+             
+               <picture>
+                 <source srcset="./img/team/nikolai-mobile.webp 1x, ./img/team/nikolai-mobile@2x.webp 2x" type="image/webp" 
+                 media="(max-width:767px)" >
+                    <source srcset="./img/team/nikolai.webp 1x, ./img/team/nikolai@2x.webp 2x" type="image/webp" 
+                  media="(min-width:1200px)" >
+                  <source srcset="./img/team/nikolai-tablet.webp 1x, ./img/team/nikolai-tablet@2x.webp 2x" type="image/webp" 
+                  media="(min-width:768px)" >
+               
+                  <img  class="team-picture" srcset="
+                  ./img/team/nikolai-mobile.jpg 1x, 
+                  ./img/team/nikolai-mobile@2x.jpg 2x,
+                  ./img/team/nikolai-tablet.jpg 1x,
+                  ./img/team/nikolai-tablet@2.jpg 2x,
+                  ./img/team/nikolai.jpg 1x,
+                  ./img/team/nikolai-1@.jpg 2x" 
+                  src="./img/team/nikolai-mobile.jpg" alt="Фото дизайнера" >
+                
+               </picture>
+           
+               <div class="team-list-item-description">
+                 <h3 class="team-title">Николай Кучеренко</h3>
               <p class="team-text">Product Designer</p>
               <ul class="team-socials list">
                 <li class="team-socials-item">
@@ -238,7 +252,7 @@
                     href="https://www.instagram.com/"
                     aria-label="Иконка инстаграма"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-instagram"></use>
+                      <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -248,7 +262,7 @@
                     href="https://twitter.com/?lang=ru"
                     aria-label="Иконка твиттера"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-twitter"></use>
+                      <use href="./images/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -258,7 +272,7 @@
                     href="https://www.facebook.com/"
                     aria-label="Иконка фейсбука"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-facebook"></use></svg
+                      <use href="./images/sprite.svg#icon-facebook"></use></svg
                   ></a>
                 </li>
                 <li class="team-socials-item">
@@ -267,18 +281,31 @@
                     href="https://www.linkedin.com/"
                     aria-label="Иконка линкедина"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-linkedin"></use></svg
+                      <use href="./images/sprite.svg#icon-linkedin"></use></svg
                   ></a>
                 </li>
-              </ul>
+              </ul></div>
+              
             </li>
             <li class="team-list-item">
-              <img
-                src="./img/team/olga.jpg"
-                alt="Фото_разработчика"
-                width="270"
-                height="260"
-              />
+                <picture>
+                    <source srcset="./img/team/olga-mobile.webp 1x, ./img/team/olga-mobile@2x.webp 2x" type="image/webp" 
+                    media="(max-width:767px)" >
+                       <source srcset="./img/team/olga.webp 1x, ./img/team/olga@2x.webp 2x" type="image/webp" 
+                     media="(min-width:1200px)" >
+                     <source srcset="./img/team/olga-tablet.webp 1x, ./img/team/olga-tablet@2x.webp 2x" type="image/webp" 
+                     media="(min-width:768px)" >
+                  
+                     <img  class="team-picture" srcset="
+                     ./img/team/olga-mobile.jpg 1x, 
+                     ./img/team/olga-mobile@2x.jpg 2x,
+                     ./img/team/olga-tablet.jpg 1x,
+                     ./img/team/olga-tablet@2.jpg 2x,
+                     ./img/team/olga.jpg 1x,
+                     ./img/team/olga-1@.jpg 2x" 
+                     src="./img/team/olga-mobile.jpg" alt="Фото разработчика" >
+                   
+                  </picture>
               <h3 class="team-title">Ольга Иванова</h3>
               <p class="team-text">Frontend Developer</p>
               <ul class="team-socials list">
@@ -288,7 +315,7 @@
                     href="https://www.instagram.com/"
                     aria-label="Иконка инстаграма"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-instagram"></use>
+                      <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -298,7 +325,7 @@
                     href="https://twitter.com/?lang=ru"
                     aria-label="Иконка твиттера"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-twitter"></use></svg
+                      <use href="./images/sprite.svg#icon-twitter"></use></svg
                   ></a>
                 </li>
                 <li class="team-socials-item">
@@ -307,7 +334,7 @@
                     href="https://www.facebook.com/"
                     aria-label="Иконка фейсбука"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-facebook"></use></svg
+                      <use href="./images/sprite.svg#icon-facebook"></use></svg
                   ></a>
                 </li>
                 <li class="team-socials-item">
@@ -316,18 +343,29 @@
                     href="https://www.linkedin.com/"
                     aria-label="Иконка линкедина"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-linkedin"></use></svg
+                      <use href="./images/sprite.svg#icon-linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                src="./img/team/andrei.jpg"
-                alt="Фото_маркетингового_директора"
-                width="270"
-                height="260"
-              />
+                <picture>
+                    <source srcset="./img/team/andrei-mobile.webp 1x, ./img/team/andrei-mobile@2x.webp 2x" type="image/webp" 
+                    media="(max-width:767px)" >
+                       <source srcset="./img/team/andrei.webp 1x, ./img/team/andrei@2x.webp 2x" type="image/webp" 
+                     media="(min-width:1200px)" >
+                     <source srcset="./img/team/andrei-tablet.webp 1x, ./img/team/andrei-tablet@2x.webp 2x" type="image/webp" 
+                     media="(min-width:768px)" >
+                  
+                     <img  class="team-picture" srcset="
+                     ./img/team/andrei-mobile.jpg 1x, 
+                     ./img/team/andrei-mobile@2x.jpg 2x,
+                     ./img/team/andrei-tablet.jpg 1x,
+                     ./img/team/andrei-tablet@2.jpg 2x,
+                     ./img/team/andrei.jpg 1x,
+                     ./img/team/andrei-1@.jpg 2x" 
+                     src="./img/team/andrei-mobile.jpg" alt="Marketing" >
+                </picture>
               <h3 class="team-title">Андрей Шевченко</h3>
               <p class="team-text">Marketing</p>
               <ul class="team-socials list">
@@ -337,7 +375,7 @@
                     href="https://www.instagram.com/"
                     aria-label="Иконка инстаграма"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-instagram"></use>
+                      <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -347,7 +385,7 @@
                     href="https://twitter.com/?lang=ru"
                     aria-label="Иконка твиттера"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-twitter"></use></svg
+                      <use href="./images/sprite.svg#icon-twitter"></use></svg
                   ></a>
                 </li>
                 <li class="team-socials-item">
@@ -356,7 +394,7 @@
                     href="https://www.facebook.com/"
                     aria-label="Иконка фейсбука"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-facebook"></use></svg
+                      <use href="./images/sprite.svg#icon-facebook"></use></svg
                   ></a>
                 </li>
                 <li class="team-socials-item">
@@ -365,18 +403,29 @@
                     href="https://www.linkedin.com/"
                     aria-label="Иконка линкедина"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-linkedin"></use></svg
+                      <use href="./images/sprite.svg#icon-linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                src="./img/team/ivan.jpg"
-                alt="Фото_дизайнера_интерфейса"
-                width="270"
-                height="260"
-              />
+                <picture>
+                    <source srcset="./img/team/ivan-mobile.webp 1x, ./img/team/ivan-mobile@2x.webp 2x" type="image/webp" 
+                    media="(max-width:767px)" >
+                       <source srcset="./img/team/ivan.webp 1x, ./img/team/ivan@2x.webp 2x" type="image/webp" 
+                     media="(min-width:1200px)" >
+                     <source srcset="./img/team/ivan-tablet.webp 1x, ./img/team/ivan-tablet@2x.webp 2x" type="image/webp" 
+                     media="(min-width:768px)" >
+                  
+                     <img  class="team-picture" srcset="
+                     ./img/team/ivan-mobile.jpg 1x, 
+                     ./img/team/ivan-mobile@2x.jpg 2x,
+                     ./img/team/ivan-tablet.jpg 1x,
+                     ./img/team/ivan-tablet@2.jpg 2x,
+                     ./img/team/ivan.jpg 1x,
+                     ./img/team/ivan-1@.jpg 2x" 
+                     src="./img/team/ivan-mobile.jpg" alt="Marketing" >
+                </picture>
               <h3 class="team-title">Иван Николаев</h3>
               <p class="team-text">UI Designer</p>
               <ul class="team-socials list">
@@ -386,7 +435,7 @@
                     href="https://www.instagram.com/"
                     aria-label="Иконка инстаграма"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-instagram"></use>
+                      <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -396,7 +445,7 @@
                     href="https://twitter.com/?lang=ru"
                     aria-label="Иконка твиттера"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-twitter"></use></svg
+                      <use href="./images/sprite.svg#icon-twitter"></use></svg
                   ></a>
                 </li>
                 <li class="team-socials-item">
@@ -405,7 +454,7 @@
                     href="https://www.facebook.com/"
                     aria-label="Иконка фейсбука"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-facebook"></use></svg
+                      <use href="./images/sprite.svg#icon-facebook"></use></svg
                   ></a>
                 </li>
                 <li class="team-socials-item">
@@ -414,7 +463,7 @@
                     href="https://www.linkedin.com/"
                     aria-label="Иконка линкедина"
                     ><svg class="icon-socials-team">
-                      <use href="./icons/sprite.svg#icon-linkedin"></use></svg
+                      <use href="./images/sprite.svg#icon-linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
